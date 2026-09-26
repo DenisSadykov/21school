@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#060b15">
+  <title>ИСПОВЕДЬ — пять историй</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="world" id="world">
+    <div class="aura aura-one" aria-hidden="true"></div>
+    <div class="aura aura-two" aria-hidden="true"></div>
+    <div class="tunnel" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="grain" aria-hidden="true"></div>
+    <div id="stage" class="stage" aria-live="polite"></div>
+    <footer class="bottom-bar">
+      <button class="outline-button map-button" id="mapButton" type="button" aria-label="Открыть карту презентации">КАРТА <span>⌘</span></button>
+      <div class="progress-wrap"><div class="progress-line"><i id="progressFill"></i></div></div>
+      <div class="controls"><button id="prevButton" class="icon-button" type="button" aria-label="Назад">←</button><button id="nextButton" class="icon-button next-button" type="button" aria-label="Вперёд">→</button></div>
+    </footer>
+    <div id="mapOverlay" class="map-overlay" role="dialog" aria-modal="true" aria-label="Карта презентации" hidden>
+      <button id="mapClose" class="map-close" type="button" aria-label="Закрыть карту">×</button>
+      <p class="eyebrow">МАРШРУТ / 05 ГОЛОСОВ</p>
+      <h2>Куда летим?</h2>
+      <div id="mapList" class="map-list"></div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
